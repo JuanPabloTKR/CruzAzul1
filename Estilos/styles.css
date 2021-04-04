@@ -4,7 +4,6 @@
       margin: 0;
      padding: 0;
 }
-
 body {
        font-family: "Oswald", sans-serif;
   background-color:   #00008b;
@@ -99,7 +98,7 @@ hr {
       display: inline-block;
        border: 0;
   font-weight: bold;
-      padding: 10px 20px;
+      padding: 1rem 1rem 1rem 1rem;
    background: #262626;
         color: #fff;
     font-size: 17px;
@@ -113,7 +112,7 @@ hr {
 .showcase {
             width: 100%;
            height: 600px;
-       background: url("./img/FondoCruzAzul.png") no-repeat center center/cover;
+       background: url("./Imagenes/FondoCruzAzul.png") no-repeat center center/cover;
           display: flex;
    flex-direction: column;
       align-items: center;
@@ -170,7 +169,7 @@ hr {
 .cards-banner-one {
   width: 100%;
   height: 650px;
-  background: url("./img/Cementera.png")no-repeat center center/cover;
+  background: url("./Imagenes/Cementera.png")no-repeat center center/cover;
    flex-direction: column;
       align-items: right;
        text-align: right;
@@ -194,10 +193,10 @@ hr {
 
 /* CARDS BANNER TWO*/
 .cards-banner-two {
-  width:  100%;
-  height: 650px;
-  background: url("./img/maquina.png") no-repeat center center/cover;
- flex-direction: column;
+       width:  100%;
+      height: 650px;
+  background: url("./Imagenes/maquina.png") no-repeat center center/cover;
+   flex-direction: column;
       align-items: right;
        text-align: right;
   justify-content: flex-end;
@@ -206,18 +205,18 @@ hr {
 
 .cards-banner-two .contentt {
            width: 95%;
-         padding: 280px 0 0 100px;
-           color:      #8b5742;
+         padding: 10rem 1rem 1rem 1rem;
+           color: #ece30a;
      font-family: bold "Impact";
        font-size: 28px;
 }
 
 
 .cards-banner-two p {
-        margin: 10px 0 0px 0;
-   font-family: bold "Impact";
-     font-size: 23px;
-         color: #00fa9a;
+       padding: 3rem 1rem 3rem 1rem;
+   font-family: bold "consolas";
+     font-size: 29px;
+         color: #c0ff04;
 }
 
 
@@ -285,6 +284,8 @@ hr {
        font-size: 1rem;
   padding-bottom: 20px;
 }
+
+
 
 
 
@@ -362,4 +363,37 @@ hr {
   .footer-links .footer-container ul {
     text-align: center;
   }
+}
+
+@media (max-width:320px){
+  <!—- Aquí van todos los estilos CSS -->
+}
+/* Empezamos con los estilos del escritorio */
+
+@media screen and (max-width: 991px) {
+/* Aquí van los estilos para tablets grandes */
+}
+
+/*edium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+
+#wrapper {width:90%;  margin: 0 auto; }
+
+#content {width:70%; float:left; }
+
+#sidebar {width:30%; float:right; }
+
+
+/*edium devices (phone, 480px and up)*/
+@media screen and (max-width: 480px){
+    #encabezado{
+        height: auto;
+    }
+    #contenido{
+        width: auto;
+    }
+    #barra_lateral{
+        display:none;
+    }
 }
